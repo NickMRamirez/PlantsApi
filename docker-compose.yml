@@ -1,0 +1,9 @@
+version: "3"
+services:
+  webapi:
+    build: ./PlantsApi.WebApi/
+    image: nramirez/plantsapi:latest
+    ports: 
+      - "80"
+  db:
+    image: couchdb
